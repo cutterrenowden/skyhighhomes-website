@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <title>Real Estate Photos</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <script>
+        function highlightNav(section){
+           var element = document.getElementById("home");
+           element.classList.remove("active");
+            element = document.getElementById("reviews");
+           element.classList.remove("active");
+           element = document.getElementById(section);
+           element.classList.add("active");
+        };
+    </script>
+    <div class="topnav" id="myTopnav">
+        <a id="home" class="active"  href="landing-page.html#" onclick="highlightNav('home')">Home</a>
+        <a id="reviews"  href="landing-page.html#third" onclick="highlightNav('reviews')">Reviews</a>
+        <a href="contact-page.html" >Book Now</a>
+        <a href=".about" >About</a>
+    </div>
+</body>
