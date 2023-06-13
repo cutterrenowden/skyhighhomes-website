@@ -131,11 +131,14 @@ color:#b2bac2;
     height:auto;
    }
    .description{
+    display:block;
+    margin:auto;
+    padding-left:0%;
     font-weight:bold;
     text-align:center;
    }
    .lower-description{
-    text-align:center
+    text-align:center;
    }
    .child{
     width:33.33%;
