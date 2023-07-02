@@ -1,0 +1,40 @@
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-about">
+  <script>
+    function highlightNav(section){
+       var element = document.getElementById("home");
+       element.classList.remove("active");
+        element = document.getElementById("reviews");
+       element.classList.remove("active");
+       element = document.getElementById(section);
+       element.classList.add("active");
+    };
+</script>
+<div class="topnav" id="myTopnav">
+    <a id="home"   href="index.html#" onclick="highlightNav('home')">Home</a>
+    <a id="reviews"  href="index.html#third" onclick="highlightNav('reviews')">Reviews</a>
+    <a id="contact" href="contact-page.html#" >Book Now</a>
+    <a id="about" class="active" href="about-page.html#">About</a>
+</div>
+
+    <div class="container-about">
+        <div class="left-area-about">
+          <p class="dynamic-font-about">Hi! My name is Cutter Renowden. I am a rising senior in Gilbert, Arizona. I started this business because I love photography and am trying to save money for college. So far, I have helped over a dozen home-sellers and real estate agents escapsulate new rooves, backyard remodels, and spacious plots. I hope you can be the 13th. 
+            <br> <br> <br>
+            Below are a few of my favorite pictures I have taken. Please enjoy.
+          </p>
+        </div>
+        <div class="right-area">
+          <img src="images\me.jpg" alt="Image">
+        </div>
+      </div>
+    <div class="image-container">
+        <img src="images\\flower.jpg" class="img-about" id="main-image">
+        <img src="images\\boston.jpg" class="img-about" id="fade-image1">
+        <img src="images\\moon.jpeg" class="img-about" id="fade-image2">
+    </div>
+</body>
+  

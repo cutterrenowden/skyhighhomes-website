@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <title>Real Estate Photos</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <script>
+        function highlightNav(section){
+           var element = document.getElementById("home");
+           element.classList.remove("active");
+            element = document.getElementById("reviews");
+           element.classList.remove("active");
+           element = document.getElementById(section);
+           element.classList.add("active");
+        };
+    </script>
+    <div class="topnav" id="myTopnav">
+        <a id="home"  href="index.html#" onclick="highlightNav('home')">Home</a>
+        <a id="reviews"  href="index.html#third" onclick="highlightNav('reviews')">Reviews</a>
+        <a href="contact-page.html" class="active" >Book Now</a>
+        <a href="about-page.html" >About</a>
+    </div>
+    <div class="container">
+        <div class="left-area">
+          <p class="dynamic-font">Interested in having beautiful photos of your home from the sky? Fill out the form below!</p>
+        </div>
+        <div class="right-area">
+          <img src="images\skyhighhomeslogo4k.jpg" alt="Image">
+        </div>
+      </div>
+    <form action="https://formsubmit.co/skyhighhomesaz@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="hidden" name="_next" value="thanks.html">
+        <input type="hidden" name="_subject" value="Sky High Homes Booking">
+        <input type="hidden" name="_autoresponse" value="Thanks for contacting Sky High Homes! We will send you an email shortly.">
+        <input type="hidden" name="_template" value="table">
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="text" name="address" placeholder="Address of Property" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
