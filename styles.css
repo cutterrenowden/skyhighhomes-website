@@ -355,6 +355,12 @@ margin-left:30px;
 .topnavDiv{
     transition: background-color 0.25s ease'
 }
+@media screen and (max-width: 600px), (any-pointer:coarse){
+    .topnav a{
+        width: 100%;
+        height:50px;
+    }
+}
 
 :root {
     scroll-behavior: smooth;
